@@ -1,0 +1,1 @@
+apache-maven-3.8.2\bin\mvn.cmd spotbugs:check & apache-maven-3.6.3\bin\mvn.cmd spotbugs:gui
