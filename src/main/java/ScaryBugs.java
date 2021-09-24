@@ -11,12 +11,13 @@ public class ScaryBugs {
 		this.checkStrValue = "SomeValue";
 	}
 
-	private void executeSomeConditions() {
+	private String executeSomeConditions() {
 		if ("SomeValue".equals(this.checkStrValue)) {
-			// Condition 1
+			return "cat";
 		} else if ("SomeValue".equals(this.checkStrValue)) {
-			// Condition 2
+			return "dog";
 		}
+		return "cow";
 	}
 
 	private static void incorrectAssignmentInIfCondition() {
