@@ -1,4 +1,4 @@
-package triangle.implementations.tbach;
+package triangle.implementations;
 
 import triangle.Triangle;
 import triangle.TriangleResult;

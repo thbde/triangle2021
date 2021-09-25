@@ -1,4 +1,4 @@
-package triangle.implementations.tbach;
+package triangle.implementations;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -7,7 +7,7 @@ import org.junit.Test;
 import triangle.Triangle;
 import triangle.TriangleResult;
 
-public class TriangleFirstTryTestLhartman {
+public class TriangleLhartmanTest {
 
 	public static final Triangle triangle = new TriangleLhartman();
 

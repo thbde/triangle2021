@@ -7,7 +7,7 @@ import org.junit.Test;
 import triangle.Triangle;
 import triangle.TriangleResult;
 
-public class TriangleTestDLoch {
+public class TriangleDLochTest {
 
 	public static final Triangle triangle = new TriangleDLoch();
 
@@ -74,7 +74,7 @@ public class TriangleTestDLoch {
     @Test
 	public void testGetTriangleResultForLengthsIsosceles2() {
 		final int[] input = { 20, 10, 10 };
-		final TriangleResult expected = TriangleResult.TRIANGLE_ISOSCELES;
+		final TriangleResult expected = TriangleResult.UNKNOWN;
 		final TriangleResult result = triangle.getTriangleResultForLengths(input);
 		assertThat(result).isEqualTo(expected);
 	}
