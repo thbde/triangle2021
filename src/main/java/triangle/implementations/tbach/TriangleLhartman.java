@@ -18,6 +18,16 @@ public class TriangleLhartman implements Triangle {
 			return TriangleResult.UNKNOWN;
 		}
 
+		// Wie berechnet sich das? :D
+		// es Muss für jedes seite geschaut werden welche die längste ist dann müssen
+		// die anderen zei mind zusammen so groß sein wie die längste seite
+		// fang ruhig mal an, ich bau den Test
+		// Die Summe 2er Seiten muss größer sein als die 3.Seite
+
+		if ((a > (b + c)) || (b > (a + c)) || (c > (a + b))) {
+			return TriangleResult.UNKNOWN;
+		}
+
 		if (a == b && b == c) {
 			return TriangleResult.TRIANGLE_EQUILATERAL;
 		} else if (a == b || b == c || a == c) {

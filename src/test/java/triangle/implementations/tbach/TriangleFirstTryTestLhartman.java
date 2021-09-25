@@ -114,4 +114,28 @@ public class TriangleFirstTryTestLhartman {
 		final TriangleResult result = triangle.getTriangleResultForLengths(input);
 		assertThat(result).isEqualTo(expected);
 	}
+
+	@Test
+	public void testGetTriangleResultForInvalidLengthOfA() {
+		final int[] input = { 10, 1, 1};
+		final TriangleResult expected = TriangleResult.UNKNOWN;
+		final TriangleResult result = triangle.getTriangleResultForLengths(input);
+		assertThat(result).isEqualTo(expected);
+	}
+
+	@Test
+	public void testGetTriangleResultForInvalidLengthOfB() {
+		final int[] input = { 1, 10, 1};
+		final TriangleResult expected = TriangleResult.UNKNOWN;
+		final TriangleResult result = triangle.getTriangleResultForLengths(input);
+		assertThat(result).isEqualTo(expected);
+	}
+
+	@Test
+	public void testGetTriangleResultForInvalidLengthOfC() {
+		final int[] input = { 1, 1, 10};
+		final TriangleResult expected = TriangleResult.UNKNOWN;
+		final TriangleResult result = triangle.getTriangleResultForLengths(input);
+		assertThat(result).isEqualTo(expected);
+	}
 }
